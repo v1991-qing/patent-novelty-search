@@ -1,6 +1,6 @@
 # Patent Novelty Search Skill（专利查新检索 Skill）
 
-面向 AI Agent（CodeBuddy / Claude / OpenClaw 等支持 Agent Skills 的客户端）的专利查新检索技能：以自有技术方案或已提交申请的权利要求为起点，完成检索、对比文件定级、新颖性/创造性逐项评价、审查员驳回预演，并给出**授权前景高/中/低**的逐项结论。
+面向 AI Agent 的专利查新检索技能：以自有技术方案或已提交申请的权利要求为起点，完成检索、对比文件定级、新颖性/创造性逐项评价、审查员驳回预演，并给出**授权前景高/中/低**的逐项结论。
 
 ## 技能定位
 
@@ -34,30 +34,6 @@ patent-novelty-search/
     ├── comparison-method.md     # C 表特征分解、定级、新颖性、三步法、驳回预演、前景用语
     └── report-template.md       # 查新报告标准结构（0–8 章 + 附录）
 ```
-
-## 安装
-
-### CodeBuddy
-
-```bash
-cp -r patent-novelty-search ~/.codebuddy/skills/
-```
-
-### WorkBuddy / OpenClaw
-
-```bash
-cp -r patent-novelty-search ~/.workbuddy/skills/
-# 或
-npx -y clawhub install patent-novelty-search
-```
-
-### Claude Code
-
-```bash
-cp -r patent-novelty-search ~/.claude/skills/
-```
-
-安装后在对话中说"查新检索""专利查新""这个方案能不能授权"等触发词即可调用。
 
 ## 触发词
 
